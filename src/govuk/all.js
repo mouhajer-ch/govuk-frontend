@@ -5,6 +5,7 @@ import Details from './components/details/details'
 import CharacterCount from './components/character-count/character-count'
 import Checkboxes from './components/checkboxes/checkboxes'
 import ErrorSummary from './components/error-summary/error-summary'
+import HideThisPage from './components/hide-this-page/hide-this-page'
 import NotificationBanner from './components/notification-banner/notification-banner'
 import Header from './components/header/header'
 import Radios from './components/radios/radios'
@@ -52,6 +53,9 @@ function initAll (options) {
   var $toggleButton = scope.querySelector('[data-module="govuk-header"]')
   new Header($toggleButton).init()
 
+  var $hideThisPageButtons = scope.querySelectorAll('[data-module="govuk-hide-this-page"]')
+  new HideThisPage($hideThisPageButtons).init()
+
   var $notificationBanners = scope.querySelectorAll('[data-module="govuk-notification-banner"]')
   nodeListForEach($notificationBanners, function ($notificationBanner) {
     new NotificationBanner($notificationBanner).init()
@@ -81,6 +85,7 @@ export {
   Checkboxes,
   ErrorSummary,
   Header,
+  HideThisPage,
   NotificationBanner,
   Radios,
   SkipLink,
