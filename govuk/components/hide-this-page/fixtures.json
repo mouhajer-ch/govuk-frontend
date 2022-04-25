@@ -1,0 +1,35 @@
+{
+    "component": "hide-this-page",
+    "fixtures": [
+        {
+            "name": "default",
+            "options": {
+                "text": "Hide this page",
+                "currentTabURL": "https://www.gov.uk",
+                "newTabURL": "https://www.google.com/search?q=weather",
+                "fakePageTitle": "How to prevent the spread of Coronavirus - GOV.UK",
+                "id": null,
+                "classes": null,
+                "attributes": {}
+            },
+            "html": "<div\n  class=\"govuk-hide-this-page\"\n  data-module=\"govuk-hide-this-page\"\n>\n  \n  \n\n\n  \n    \n  \n\n<a href=\"https://www.gov.uk\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--warning govuk-hide-this-page__button govuk-js-hide-this-page-button\" data-module=\"govuk-button\" data-new-tab-url=\"https://www.google.com/search?q=weather\" data-fake-page-title=\"How to prevent the spread of Coronavirus - GOV.UK\">\n  Hide this page\n</a>\n\n</div>",
+            "hidden": false
+        },
+        {
+            "name": "testing",
+            "options": {
+                "text": "Hide this test",
+                "currentTabURL": "https://www.test.co.uk",
+                "newTabURL": "https://www.google.com/search?q=test",
+                "fakePageTitle": "This is a test",
+                "id": "test-id",
+                "classes": "test-class",
+                "attributes": {
+                    "test-attribute": true
+                }
+            },
+            "html": "<div id=\"test-id\"\n  class=\"govuk-hide-this-page test-class\"\n  data-module=\"govuk-hide-this-page\" test-attribute=\"true\"\n>\n  \n  \n\n\n  \n    \n  \n\n<a href=\"https://www.test.co.uk\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--warning govuk-hide-this-page__button govuk-js-hide-this-page-button\" data-module=\"govuk-button\" data-new-tab-url=\"https://www.google.com/search?q=test\" data-fake-page-title=\"This is a test\">\n  Hide this test\n</a>\n\n</div>",
+            "hidden": true
+        }
+    ]
+}
