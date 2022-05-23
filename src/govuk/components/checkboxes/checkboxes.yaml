@@ -899,3 +899,17 @@ examples:
         text: British
       - value: irish
         text: Irish
+
+- name: item checked overrides values
+  hidden: true
+  data:
+    name: colors
+    items:
+      - value: red
+        text: Red
+      - value: green
+        text: Green
+        checked: false
+      - value: blue
+        text: Blue
+    values: [red, green]

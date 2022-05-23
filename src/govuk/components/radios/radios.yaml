@@ -879,3 +879,17 @@ examples:
       - value: no
         text: No
         checked: true
+
+- name: item checked overrides value
+  hidden: true
+  data:
+    name: colors
+    items:
+      - value: red
+        text: Red
+      - value: green
+        text: Green
+        checked: false
+      - value: blue
+        text: Blue
+    value: green

@@ -304,3 +304,17 @@ examples:
         -
           value: 2
           text: GOV.UK frontend option 2
+
+  - name: item selected overrides value
+    hidden: true
+    data:
+      name: colors
+      items:
+        - value: red
+          text: Red
+        - value: green
+          text: Green
+          selected: false
+        - value: blue
+          text: Blue
+      value: green
